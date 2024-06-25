@@ -3,50 +3,57 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('img/fundo.png') no-repeat center center fixed;
+    background: url('../img/fundo.png') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+.logo-container{
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .login-container {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color:   #ff9900;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    align-items: center;
 }
 
-.login-box h1 {
-    color: #FF9900;
-    text-align: center;
-}
 
 .login-box label {
     display: block;
     margin: 10px 0 5px;
+    color:#ffffff;
+    font-weight: bold;
 }
 
 .login-box input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
+    margin-right: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .login-box a {
-    color: #FF9900;
-    text-decoration: none;
+    color:  rgb(255, 255, 255);
 }
 
-.login-box button {
-    width: 100%;
-    padding: 10px;
-    background-color: #FF9900;
-    border: none;
-    border-radius: 5px;
-    color: white;
+.submit {
+    background-color:  #ff8c00; 
+    color: white; 
+    font-weight: bold; 
+    font-size: medium;
+    border: 3px solid white;
+    border-radius: 10px;  
+    padding: 10px 20px;
     cursor: pointer;
+    width: 96%;
 }
 
 .login-box p {
