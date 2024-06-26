@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enviar Receita - KiSabor</title>
+    <link rel="stylesheet" href="css/receita.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="img/logo.png" alt="KiSabor Logo" />
+        </div>
+        <input type="text" placeholder="Pesquisar" />
+        <button class="search-button">🔍</button>
+        <button class="submit-recipe">Enviar uma receita</button>
+        <div class="user-icon">👤</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Salgadas</a></li>
+          <li><a href="#">Doces</a></li>
+          <li><a href="#">Datas Comemorativas</a></li>
+          <li><a href="#">Dietas Especiais</a></li>
+          <li><a href="#">Todas as Receitas</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="recipe-form">
+        <div class="form-group">
+          <label for="recipe-title">Título da receita</label>
+          <input
+            type="text"
+            id="recipe-title"
+            placeholder="Digite o título aqui."
+          />
+        </div>
+        <div class="form-group">
+          <label for="recipe-description">Descrição</label>
+          <textarea
+            id="recipe-description"
+            placeholder="Digite a descrição aqui."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="recipe-servings">Número de porções</label>
+          <input type="number" id="recipe-servings" />
+        </div>
+        <div class="form-group">
+          <label for="recipe-ingredients">Ingredientes</label>
+          <textarea
+            id="recipe-ingredients"
+            placeholder="Insira somente um ingrediente por linha."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="prep-time-hours">Tempo de preparo (obrigatório)</label>
+          <div class="time-input">
+            <input type="number" id="prep-time-hours" placeholder="horas" />
+            <input type="number" id="prep-time-minutes" placeholder="minutos" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cook-time-hours">Tempo de cozimento (opcional)</label>
+          <div class="time-input">
+            <input type="number" id="cook-time-hours" placeholder="horas" />
+            <input type="number" id="cook-time-minutes" placeholder="minutos" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cost">Custo (opcional)</label>
+          <input type="text" id="cost" />
+        </div>
+        <div class="form-group">
+          <label for="difficulty">Dificuldade</label>
+          <select id="difficulty">
+            <option value="fácil">Fácil</option>
+            <option value="médio">Médio</option>
+            <option value="difícil">Difícil</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="recipe-preparation">Modo de preparo</label>
+          <textarea
+            id="recipe-preparation"
+            placeholder="Digite aqui o modo de preparo, em tópicos sequenciais."
+          ></textarea>
+        </div>
+        <button class="create-recipe">Criar receita</button>
+      </div>
+    </main>
+  </body>
+</html>
