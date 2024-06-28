@@ -4,32 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enviar Receita - KiSabor</title>
-    <link rel="stylesheet" href="css/receita.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="header-container">
-        <div class="logo">
-          <img src="img/logo-branco.png" alt="KiSabor Logo" />
-        </div>
-        <input type="text" placeholder="Pesquisar" class="pesquisa">
-        <button class="submit" href=""> <img src="img/lupa.png" > </button>
-        <button class="submit" href=""> Enviar uma receita </button>
-        <div class="user-icon">👤</div>
-      </div>
       <nav>
-        <section class="categories">
-            <a href="#">Salgadas</a>
-            <a href="#">Doces</a>
-            <a href="#">Datas Comemorativas</a>
-            <a href="#">Dietas Especiais</a>
-            <a href="#">Todas as Receitas</a>
-            <a href="#">Blog</a>
+          <div class="nav">
+              <a href="index.html">
+                  <div class="logo-container1">
+                      <img src="img/logo-branco.png" alt="KiSabor Logo">
+                  </div>
+              </a>
+              <div class="pesq">
+                  <input type="text" placeholder="Pesquisar" class="pesquisa poppins">
+                  <a href="./pesquisa.html">
+                      <button class="submit animacao-botao" href=""> <img src="img/lupa.png" > </button>
+                  </a>
+                  <a href="./novaReceita.html">
+                      <button class="submit poppins animacao-botao" href=""> Enviar uma receita </button>
+                  </a>
+              </div>
+              <a href="login.html" class="entrar">Entrar</a>
+          </div>
       </nav>
-    </header>
-    <main>
-      <div class="recipe-form">
-        <div class="form-group">
+      <section class="categories">
+          <a href="#" class="underline">Salgadas</a>
+          <a href="#" class="underline">Doces</a>
+          <a href="#" class="underline">Datas Comemorativas</a>
+          <a href="#" class="underline">Dietas Especiais</a>
+          <a href="#" class="underline">Todas as Receitas</a>
+          <a href="#" class="underline">Blog</a>
+      </section>
+  </header>
+  <h1 class="h1-nova">Nova Receita</h1>
+    <main class="novareceita">
+      <div class="coluna mr">
+        <div class="form-group mr">
           <label for="recipe-title">Título da receita</label>
           <input
             type="text"
@@ -47,13 +60,6 @@
         <div class="form-group">
           <label for="recipe-servings">Número de porções</label>
           <input type="number" id="recipe-servings" />
-        </div>
-        <div class="form-group">
-          <label for="recipe-ingredients">Ingredientes</label>
-          <textarea
-            id="recipe-ingredients"
-            placeholder="Insira somente um ingrediente por linha."
-          ></textarea>
         </div>
         <div class="form-group">
           <label for="prep-time-hours">Tempo de preparo (obrigatório)</label>
@@ -81,15 +87,31 @@
             <option value="difícil">Difícil</option>
           </select>
         </div>
-        <div class="form-group">
+      </div>
+      <div class="coluna">
+        <div class="form-group h-50">
+          <label for="recipe-ingredients">Ingredientes</label>
+          <textarea
+          class="h-big"
+            id="recipe-ingredients"
+            placeholder="Insira somente um ingrediente por linha."
+          ></textarea>
+        </div>
+        
+        <div class="form-group h-50">
           <label for="recipe-preparation">Modo de preparo</label>
           <textarea
+          class="h-big"
             id="recipe-preparation"
             placeholder="Digite aqui o modo de preparo, em tópicos sequenciais."
           ></textarea>
         </div>
-        <button class="create-recipe">Criar receita</button>
+        <a href="./receita.html" class="div-criar">
+          <button class="submit btn-criar">Criar receita</button>
+        </a>
       </div>
+    </div>
+
     </main>
   </body>
 </html>
