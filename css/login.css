@@ -2,11 +2,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: url('../img/fundo.png') no-repeat center center fixed;
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../img/fundo.png') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins";
+    padding: 70px;
+}
+input{
+    font-family: "Poppins";
+    border-radius: 10px;
+    outline: 0;
+    border: #ffffff;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border: 2px solid #ff7b00;
 }
 
 .logo-container{
@@ -17,27 +28,28 @@ body {
 
 .login-container {
     background-color:   #ff9900;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
 }
-
+.logo-container img {
+    transition: all 0.3s ease;
+}
+.logo-container:hover img {
+    transform: scale(1.10);
+    transition: all 0.3s ease;
+}
+.logo-container:active img {
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
 
 .login-box label {
     display: block;
     margin: 10px 0 5px;
     color:#ffffff;
     font-weight: bold;
-}
-
-.login-box input {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 .login-box a {
@@ -48,15 +60,57 @@ body {
     background-color:  #ff8c00; 
     color: white; 
     font-weight: bold; 
-    font-size: medium;
+    font-size: 20px;
     border: 3px solid white;
     border-radius: 10px;  
     padding: 10px 20px;
     cursor: pointer;
     width: 96%;
+    margin-top: 20px;
+    font-family: "Poppins";
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
-
+.submit:hover{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #ff8c00;
+    color: #ff8c00;
+    transform: scale(1.07);
+    transition: all 0.3s ease;
+}
+.submit:active{
+    background-color: rgb(255, 227, 195);
+    border: 2px solid #ffffff;
+    transform: scale(0.93);
+    transition: all 0.3s ease;
+}
+input{
+    outline: 0;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+input:hover{
+    box-shadow: 0 4px 20px rgba(80, 40, 0, 0.2);
+    transition: all 0.3s ease;
+}
+input:focus{
+    box-shadow: 0 4px 20px rgba(95, 48, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid #ff8c00
+}
 .login-box p {
     text-align: center;
     color: #ffffff;
+}
+
+label{
+    font-size: 20px;
+}
+
+h1{
+    color: white;
+}
+
+small{
+    color: #ffecdb;
 }

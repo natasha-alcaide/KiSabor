@@ -3,19 +3,30 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('../img/fundo.png') no-repeat center center fixed;
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../img/fundo.png') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins";
 }
 .logo-container{
     align-items: center;
     margin-bottom: 20px;
     text-align: center;
 }
+.logo-container img {
+    transition: all 0.3s ease;
+}
+.logo-container:hover img {
+    transform: scale(1.10);
+    transition: all 0.3s ease;
+}
+.logo-container:active img {
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
 .signup-container {
     background-color:#ff9900;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     

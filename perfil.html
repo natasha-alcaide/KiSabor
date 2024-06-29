@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiSabor- Perfil</title>
+    <link rel="stylesheet" href="css/perfil.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <a href="index.html">
+                    <div class="logo-container1">
+                        <img src="img/logo-branco.png" alt="KiSabor Logo">
+                    </div>
+                </a>
+                <div class="pesq">
+                    <input type="text" placeholder="Pesquisar" class="pesquisa poppins">
+                    <a href="./pesquisa.html">
+                        <button class="submit animacao-botao"> <img src="img/lupa.png" alt="Pesquisar"> </button>
+                    </a>
+                    <a href="./novaReceita.html">
+                        <button class="submit poppins animacao-botao"> Enviar uma receita </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <section class="categories">
+            <a href="#" class="underline">Salgadas</a>
+            <a href="#" class="underline">Doces</a>
+            <a href="#" class="underline">Datas Comemorativas</a>
+            <a href="#" class="underline">Dietas Especiais</a>
+            <a href="#" class="underline">Todas as Receitas</a>
+            <a href="#" class="underline">Blog</a>
+        </section>
+    </header>
+    <div class="perfil-header">
+        <img src="img/usuario.png" alt="Foto de Perfil" class="img-perfil">
+        <h1 class="h1-nova">Nome do Usuário</h1>
+    </div>
+    <h3 class="h3-nova"><u>Inserir/Editar foto de perfil</u></h3>
+
+    <div class="content">
+        <div class="left-container">
+            <main class="perfilDoUsuario">
+                <div class="coluna mr">
+                    <div class="form-group mr">
+                        <label for="user-name">Nome</label>
+                        <input type="text" id="user-name" placeholder="Nome e Sobrenome.">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Email</label>
+                        <textarea id="user-email" placeholder="nome@exemplo.com."></textarea>
+                    </div>
+                    <div class="form-group h-50">
+                        <label for="user-description">Descrição</label>
+                        <textarea class="h-big" id="user-description" placeholder="Fale um pouco sobre você."></textarea>
+                        <a href="./index.html" class="div-salvar">
+                            <button class="submit btn-salvar">Salvar</button>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="right-container">
+            <div class="coluna">
+                <div class="coluna receitas">
+                    <div class="suas-receitas">
+                        <h2>Suas receitas</h2>
+                        <div class="recipe">
+                            <img src="img/arroz.png" alt="Arroz soltinho">
+                            <p>Arroz soltinho</p>
+                            <a href="#"><u>Editar</u></a>
+                        </div>
+                        <div class="recipe">
+                            <img src="img/guioza.png" alt="Guioza">
+                            <p>Guioza</p>
+                            <a href="#"><u>Editar</u></a>
+                        </div>
+                    </div>
+                    <div class="favorite-recipes">
+                        <h2>Receitas favoritadas</h2>
+                        <div class="favorite-recipe">
+                            <img src="img/batata_assada.png" alt="Batata assada">
+                            <p>Batata assada</p>
+                            <span>20 min.</span>
+                            <span>João Marcos</span>
+                        </div>
+                        <div class="favorite-recipe">
+                            <img src="img/bolo_brigadeiro.png" alt="Bolo de brigadeiro">
+                            <p>Bolo de brigadeiro</p>
+                            <br>
+                            <span>20 min.</span>
+                            <span>Duda Tavares</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
