@@ -1,0 +1,50 @@
+.developers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.developer {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    margin: 10px;
+}
+
+.developer img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.developer h2 {
+    color: #ff6600;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.developer h3 {
+    color: #292929;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.developer a {
+    color: #ff6600;
+}
+
+.developer a:hover {
+    color: #a14406;
+    text-decoration: underline;
+}
+
+.update {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+}
