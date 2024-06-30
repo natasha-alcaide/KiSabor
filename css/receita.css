@@ -6,10 +6,11 @@
 
 .recipe-header {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 20px;
+    color: #ff8c00;
 }
 
 .recipe-header h1 {
@@ -31,14 +32,15 @@
     border-radius: 10px;
     border: 2px solid #ff8c00;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    font-size: 25px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
 
 .block-title {
-    font-size: 40px;
+    font-size: 30px;
     color: #ff8c00;
+    display: flex;
 }
 
 .bi {
@@ -46,10 +48,10 @@
 }
 
 .bi-person-circle {
-    font-size: 60px;
+    font-size:25px;
     margin-left: 50px;
 }
 
 .text-icons {
-    font-size: 30px;
+    font-size: 24px;
 }
