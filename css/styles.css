@@ -359,13 +359,6 @@ span {
     margin-bottom: 10px;
 }
 
-.novareceita {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin-top: 0px;
-}
-
 button.create-recipe {
     background-color: #ff9800;
     border: none;
@@ -376,15 +369,6 @@ button.create-recipe {
     cursor: pointer;
     width: 100%;
     margin-top: 20px;
-}
-
-.time-input {
-    display: flex;
-    gap: 10px;
-}
-
-.time-input input {
-    width: 50%;
 }
 
 textarea {
@@ -409,7 +393,7 @@ textarea {
 }
 
 .form-group {
-    display: flexbox;
+    width: 100%;
 }
 
 .form-group label {
@@ -419,15 +403,86 @@ textarea {
     display: block;
 }
 
-.form-group input,
-textarea,
+.form-group input {
+    font-family: "Poppins";
+    margin: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    border: 2px solid #ff8c00;
+    border-radius: 10px;
+    width: 100%;
+    background-color: transparent;
+    outline: 0;
+}
+
+.form-group textarea,
 select {
     font-family: "Poppins";
+    margin: 0px;
     padding: 10px;
     border: 2px solid #ff8c00;
     border-radius: 10px;
     width: 100%;
     background-color: transparent;
+    outline: 0;
+}
+
+.time-input-group input,
+textarea,
+select {
+    font-family: "Poppins";
+    border: 2px solid #ff8c00;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: transparent;
+    outline: 0;
+}
+
+.form-group input[type="file"] {
+    border: 2px solid #ff8c00;
+    border-radius: 10px;
+    width: 100%;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    color: #ff8c00;
+    font-size: 16px;
+}
+
+/* Para estilizar o botão de upload */
+.form-group input[type="file"]::-webkit-file-upload-button {
+    padding: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 2px solid #ff8c00;
+    border-radius: 10px;
+    background-color: #ff8c00;
+    color: white;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 16px;
+    outline: 0;
+    margin-right: 10px;
+}
+
+.form-group input[type="file"]::-webkit-file-upload-button:hover {
+    border: 2px solid #ff6600;
+    border-radius: 10px;
+    background-color: #ff6600;
+}
+
+.form-group input[type="file"]::-ms-browse {
+    padding: 10px;
+    border: 2px solid #ff8c00;
+    border-radius: 10px;
+    background-color: #ff8c00;
+    color: white;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 16px;
     outline: 0;
 }
 
@@ -458,10 +513,6 @@ textarea::placeholder {
 .linha {
     display: flex;
     align-items: center;
-}
-
-.mr {
-    margin-right: 7%;
 }
 
 .btn-criar {
@@ -557,4 +608,34 @@ footer img {
     display: block;
     margin: 0 auto;
     height: 50px;
+}
+
+.novareceita {
+    display: flex;
+    gap: 50px;
+}
+
+.novareceita-coluna {
+    width: 90%;
+}
+
+.time-input-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.time-input {
+    width: 100%;
+}
+
+.validate-form {
+    display: none;
+}
+.validate-form p {
+    margin: 0px !important;
+    padding: 0px !important;
+    text-align: start;
+    color: red;
 }

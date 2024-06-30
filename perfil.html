@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KiSabor - Perfil</title>
+    <title>KiSabor</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/perfil.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -45,70 +47,99 @@
             <a href="./todasReceitas.html" class="underline">Todas as Receitas</a>
         </section>
     </header>
-    <div class="perfil-header">
-        <img src="img/usuario.png" alt="Foto de Perfil" class="img-perfil">
-        <h1 class="h1-nova">Nome do Usuário</h1>
-    </div>
-    <h3 class="h3-nova link-editar-foto"><u>Inserir/Editar foto de perfil</u></h3>
 
-    <div class="content">
-        <div class="left-container">
-            <main class="perfilDoUsuario">
-                <div class="coluna mr">
-                    <div class="form-group">
-                        <label for="user-name">Nome</label>
-                        <input type="text" id="user-name" placeholder="Nome e Sobrenome.">
-                    </div>
-                    <div class="form-group">
-                        <label for="user-email">Email</label>
-                        <input type="email" id="user-email" placeholder="nome@exemplo.com.">
-                    </div>
-                    <div class="form-group h-50">
-                        <label for="user-description">Descrição</label>
-                        <textarea class="h-big" id="user-description"
-                            placeholder="Fale um pouco sobre você."></textarea>
-                        <a href="#" class="div-salvar">
-                            <button class="submit btn-salvar">Salvar</button>
-                        </a>
-                    </div>
-                </div>
-            </main>
+    <main>
+        <div class="perfil-header">
+            <img src="img/usuario.png" alt="Foto de Perfil" class="img-perfil">
+            <div>
+                <h1 class="h1-nova">Nome do Usuário</h1>
+                <p class="link-editar-foto">Inserir/Editar foto de perfil</p>
+            </div>
         </div>
-        <div class="right-container">
-            <div class="coluna">
-                <div class="coluna receitas">
-                    <div class="suas-receitas">
-                        <h2 class="titulo">Suas receitas</h2>
-                        <div class="recipe">
-                            <img src="img/bolo_brigadeiro.png" alt="Bolo de brigadeiro">
-                            <p>Bolo de brigadeiro</p>
-                            <a href="#"><u>Editar</u></a>
+
+        <div class="content">
+
+            <div class="left-container">
+                <div class="perfilDoUsuario">
+                    <form action="#" onsubmit="return validarPerfil()">
+                        <div class="form-group">
+                            <label for="user-name">Nome</label>
+                            <input type="text" id="user-name" placeholder="Nome e Sobrenome.">
+                            <div class="validate-form" id="validate-form-user-name">
+                                <p><i class="bi bi-exclamation-diamond"></i> Por favor, preencha o nome</p>
+                            </div>
                         </div>
-                        <div class="recipe">
-                            <img src="img/guioza.png" alt="Guioza">
-                            <p>Guioza</p>
-                            <a href="#"><u>Editar</u></a>
+                        <div class="form-group">
+                            <label for="user-email">Email</label>
+                            <input type="email" id="user-email" placeholder="nome@exemplo.com.">
+                            <div class="validate-form" id="validate-form-user-email">
+                                <p><i class="bi bi-exclamation-diamond"></i> Por favor, preencha o email</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="favorite-recipes">
-                        <h2 class="titulo">Receitas favoritadas</h2>
-                        <div class="favorite-recipe">
-                            <img src="img/batata_assada.png" alt="Batata assada">
-                            <p>Batata assada</p>
-                            <span>30 min.</span>
-                            <span>João Marcos</span>
+                        <div class="form-group h-50">
+                            <label for="user-description">Descrição</label>
+                            <textarea class="h-big" id="user-description"
+                                placeholder="Fale um pouco sobre você."></textarea>
+                            <div class="validate-form" id="validate-form-user-description">
+                                <p><i class="bi bi-exclamation-diamond"></i> Por favor, preencha a descrição</p>
+                            </div>
+                            <div class="div-botoes">
+                                <button type="submit" class="btn-salvar">Salvar</button>
+                                <a href="./login.html" class="div-salvar ">
+                                    <button type="button" class="btn-sair">Sair</button>
+                                </a>
+                            </div>
                         </div>
-                        <a href="receita.html" class="favorite-recipe">
-                            <img src="img/arroz.png" alt="Arroz soltinho">
-                            <p>Arroz soltinho</p>
-                            <span>20 min.</span>
-                            <span>Duda Tavares</span>
-                        </a>
+                    </form>
+                </div>
+            </div>
+
+            <div class="right-container">
+                <div class="">
+                    <div class="">
+                        <div class="suas-receitas">
+                            <h2 class="titulo">Suas receitas</h2>
+                            <div class="recipe">
+                                <img src="img/bolo_brigadeiro.png" alt="Bolo de brigadeiro">
+                                <p>Bolo de brigadeiro</p>
+                                <a href="./receita.html"><u>Editar</u></a>
+                            </div>
+                            <div class="recipe">
+                                <img src="img/guioza.png" alt="Guioza">
+                                <p>Guioza</p>
+                                <a href="./receita.html"><u>Editar</u></a>
+                            </div>
+                        </div>
+                        <div class="favorite-recipes">
+                            <h2 class="titulo">Receitas favoritadas</h2>
+                            <a href="receita.html" class="favorite-recipe">
+                                <img src="img/batata_assada.png" alt="Batata assada">
+                                <p>Batata assada</p>
+                                <span><i class="bi bi-alarm"></i> 30 min.</span>
+                                <span>João Marcos</span>
+                            </a>
+                            <a href="receita.html" class="favorite-recipe">
+                                <img src="img/arroz.png" alt="Arroz soltinho">
+                                <p>Arroz soltinho</p>
+                                <span><i class="bi bi-alarm"></i> 20 min.</span>
+                                <span>Duda Tavares</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+
+    <footer>
+        <a href="./index.html">
+            <img src="img/logo-branco.png" alt="KiSabor Logo">
+        </a>
+        <a href="./desenvolvedores.html">Sobre os Desenvolvedores</a>
+    </footer>
 </body>
 
 </html>
+
+<script src="js/validarPerfil.js"></script>

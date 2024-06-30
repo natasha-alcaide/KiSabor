@@ -3,44 +3,50 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('../img/fundo.png') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fundo.png') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     font-family: "Poppins";
 }
-.logo-container{
+
+.logo-container {
     align-items: center;
     margin-bottom: 20px;
     text-align: center;
 }
+
 .logo-container img {
     transition: all 0.3s ease;
 }
+
 .logo-container:hover img {
     transform: scale(1.10);
     transition: all 0.3s ease;
 }
+
 .logo-container:active img {
     transform: scale(0.95);
     transition: all 0.3s ease;
 }
+
 .signup-container {
-    background-color:#ff9900;
+    background-color: #ff9900;
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+
 }
+
 .signup-box h1 {
-text-align: center;
-color: #ffffff;
-    
+    text-align: center;
+    color: #ffffff;
+
 }
 
 .signup-box label {
     display: block;
     margin: 10px 0 5px;
-    color:#ffffff;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -65,17 +71,28 @@ color: #ffffff;
 }
 
 .signup-box a {
-    color: #ffffff;}
+    color: #ffffff;
+}
 
-    
+
 .submit {
-    background-color:  #ff8c00; 
-    color: white; 
-    font-weight: bold; 
+    background-color: #ff8c00;
+    color: white;
+    font-weight: bold;
     font-size: medium;
     border: 3px solid white;
-    border-radius: 10px;  
+    border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
     width: 96%;
+}
+
+.validate-form {
+    display: none;
+}
+.validate-form p {
+    margin: 0px !important;
+    padding: 0px !important;
+    text-align: start;
+    color: red;
 }
