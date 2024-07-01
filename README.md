@@ -43,7 +43,7 @@ A interação entre seres humanos e sistemas computacionais tem se tornado cada 
 1. Clone este repositório para o seu computador:
 
 ```sh 
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/natasha-alcaide/KiSabor.git
 ```
 
 2. Navegue até o diretório do projeto:
