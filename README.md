@@ -49,7 +49,7 @@ git clone https://github.com/natasha-alcaide/KiSabor.git
 2. Navegue até o diretório do projeto:
 
 ```sh 
-cd nome-do-repositorio
+cd KiSabor
 ```
 
 3. Abra o arquivo index.html no seu navegador preferido para visualizar o protótipo do site.
